@@ -10,33 +10,35 @@
 </head>
 
 <body>
-  <div class="aaa">
+  <div class="about">
     <img src="./eisenhower-matrix.jpg">
-    <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    <a class="about-info" href="https://goal-life.com/page/method/matrix-eisenhower">
+      Want more details?
+    </a>
   </div>
-  <div class="centered-main-page-element">
-    <p id="topSectionForAddingElementToList">
+  <div class="page-container">
+    <p class="add-item__block">
       <label for="new-task">Add Item</label>
-    <div class="task-row-wrapper">
-      <input id="new-task" class="task" type="text" />
+    <div class="task__wrapper">
+      <input class="task" type="text" id="new-task" />
       <button>Add</button>
     </div>
     </p>
     <h3>Todo</h3>
-    <ul id="incompleteTasks">
+    <ul class="tasks tasks_incomplite">
       <li>
         <input type="checkbox" />
         <label class="task">Pay Bills</label>
-        <input type="text" class="task" />
+        <input class="task" type="text" />
         <button class="edit">Edit</button>
         <button class="delete">
           <img src="./remove.svg">
         </button>
       </li>
-      <li class="editMode">
+      <li class="edit">
         <input type="checkbox" />
         <label class="task">Go Shopping</label>
-        <input type="text" value="Go Shopping" class="task" />
+        <input class="task" type="text" value="Go Shopping" />
         <button class="edit">Save</button>
         <button class="delete">
           <img src="./remove.svg">
@@ -44,11 +46,11 @@
       </li>
     </ul>
     <h3>Completed</h3>
-    <ul id="completed-tasks">
+    <ul class="tasks tasks_complite">
       <li>
         <input type="checkbox" checked />
         <label class="task">See the Doctor</label>
-        <input type="text" class="task" />
+        <input class="task" type="text" />
         <button class="edit">Edit</button>
         <button class="delete">
           <img src="./remove.svg">
