@@ -35,7 +35,7 @@ body {
 .task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .task__wrapper {
@@ -101,11 +101,6 @@ button:hover {
 }
 
 /* New Task */
-/* .task__label_new {
-  display: block;
-  margin: 0 0 20px;
-} */
-
 #new-task {
   width: 318px;
 }
@@ -161,17 +156,18 @@ button:hover {
 
 /* Completed */
 .tasks_complite .task__label {
-  text-decoration: line-through color: #888;
+  text-decoration: line-through;
+  color: #888;
 }
 
 /* Edit Task */
 .tasks_incomplite .task__text {
-  display: none
+  display: none;
 }
 
 .task__list_edit .task__text {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .task__list_edit .task__label {
