@@ -83,8 +83,11 @@ button:hover {
   text-transform: uppercase;
 }
 
+
 .task__text {
+  display: none;
   margin: 0;
+  width: 226px;
   font-size: 18px;
   line-height: 18px;
   height: 21px;
@@ -94,6 +97,10 @@ button:hover {
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888;
+}
+
+.tasks_new .task__text {
+  display: block;
 }
 
 .task__text:focus {
@@ -106,7 +113,7 @@ button:hover {
 }
 
 /* Task list */
-.task__list {
+.task__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -116,11 +123,12 @@ button:hover {
   align-items: center;
 }
 
-.tasks_new .task__list {
+.tasks_new .task__item {
+  justify-content: flex-start;
   border: none;
 }
 
-.task__list>* {
+.task__item>* {
   vertical-align: middle;
 }
 
@@ -133,15 +141,6 @@ button:hover {
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
-}
-
-.tasks_new .task__label {
-  padding-left: 0;
-  font-size: 15px;
-}
-
-.task__text {
-  width: 226px
 }
 
 .delete-btn__img {
@@ -161,15 +160,11 @@ button:hover {
 }
 
 /* Edit Task */
-.tasks_incomplite .task__text {
-  display: none;
-}
-
-.task__list_edit .task__text {
+.task__item_edit .task__text {
   display: inline-block;
   width: 224px;
 }
 
-.task__list_edit .task__label {
+.task__item_edit .task__label {
   display: none;
 }
